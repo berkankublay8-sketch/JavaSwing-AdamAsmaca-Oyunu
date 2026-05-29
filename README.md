@@ -1,1 +1,1 @@
-# Java-Swing-Adam-Asmaca-Oyun-Geli-tirme-Program-
+# Java-Swing-Adam-Asmaca
