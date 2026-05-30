@@ -79,7 +79,7 @@ Bu proje, 2. sınıf 2. dönemde görülen **5 farklı dersin** konularından ol
 ---
 
 ### 🏆 Oyun Sonuçları
-> Kelime doğru tahmin edilince tebrik, 11 yanlışta oyun biter ve doğru kelime gösterilir.
+> Kelime doğru tahmin edilince kazanılır, 11 yanlışta oyun biter ve doğru kelime gösterilir.
 
 <p align="center">
   <img src="resimler/kazanma.png" width="45%"/>
