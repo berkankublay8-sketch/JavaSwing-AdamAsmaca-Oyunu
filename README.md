@@ -1,4 +1,3 @@
-
 # 🎯 Adam Asmaca Oyunu
 
 <div align="center">
@@ -39,43 +38,73 @@ Bu proje, 2. sınıf 2. dönemde görülen **5 farklı dersin** konularından ol
 ## 🖼️ Ekran Görüntüleri
 
 ### 🔐 Şifre Ekranı
-![Şifre Ekranı](sifre_ekrani.png)
+> İlk açılışta şifre belirleme ekranı gelir. Kullanıcı şifresini iki kez girerek kaydeder.
 
-### 💡 İpucu Belirleme
-![İpucu Belirleme](ipucu_belirle.png)
+<p align="center">
+  <img src="resimler/sifre_ekrani.png" width="45%"/>
+  <img src="resimler/ipucu_belirle.png" width="45%"/>
+</p>
+<p align="center">
+  <img src="resimler/sifre_kaydedildi.png" width="45%"/>
+</p>
 
-### ✅ Şifre Kaydedildi
-![Şifre Kaydedildi](sifre_kaydedildi.png)
+---
 
 ### 🎮 Oyun Ekranı
-![Oyun Ekranı](oyun_ekrani.png)
+> Sol tarafta adam asmaca resmi, ortada harf kutucukları, sağda tahmin alanları. Süre sayacı ve yanlış sayacı anlık güncellenir.
 
-### 💡 İpucu Onayı
-![İpucu Onayı](ipucu_onayi.png)
+<p align="center">
+  <img src="resimler/oyun_ekrani.png" width="90%"/>
+</p>
 
-### ⚠️ Geçersiz Karakter Uyarısı
-![Geçersiz Karakter](gecersiz_karakter.png)
+---
 
-### ⚠️ Türkçe Karakter Uyarısı
-![Türkçe Uyarı](turkce_uyari.png)
+### 💡 İpucu Sistemi
+> İpucu Al butonuna basıldığında onay penceresi açılır. Her kelime için yalnızca 1 ipucu hakkı vardır.
 
-### ⚠️ Harf Zaten Denendi Uyarısı
-![Harf Denendi](harf_denendi.png)
+<p align="center">
+  <img src="resimler/ipucu_onayi.png" width="90%"/>
+</p>
 
-### 🏆 Kazanma Ekranı
-![Kazanma](kazanma.png)
+---
+
+### ⚠️ Uyarı Mesajları
+> Geçersiz karakter, Türkçe harf ve daha önce denenen harf girildiğinde uyarı gösterilir.
+
+<p align="center">
+  <img src="resimler/gecersiz_karakter.png" width="30%"/>
+  <img src="resimler/turkce_uyari.png" width="30%"/>
+  <img src="resimler/harf_denendi.png" width="30%"/>
+</p>
+
+---
+
+### 🏆 Oyun Sonuçları
+> Kelime doğru tahmin edilince tebrik, 11 yanlışta oyun biter ve doğru kelime gösterilir.
+
+<p align="center">
+  <img src="resimler/kazanma.png" width="45%"/>
+  <img src="resimler/kaybetme.png" width="45%"/>
+</p>
+
+---
 
 ### 📖 Kelime Sözlüğü
-![Kelime Sözlüğü](kelime_sozlugu.png)
+> Oyunda çıkan her kelimenin dersi ve anlamı sözlükte listelenir.
 
-### 💀 Kaybetme Ekranı
-![Kaybetme](kaybetme.png)
+<p align="center">
+  <img src="resimler/kelime_sozlugu.png" width="90%"/>
+</p>
 
-### 📊 Eski Skorlar
-![Eski Skorlar](eski_skorlar.png)
+---
 
-### 📋 Giriş Logları
-![Giriş Logları](giris_loglari.png)
+### 📊 Veri Yönetimi
+> Eski skorlar ve giriş logları JTable ile listelenir, şifreli temizle butonu ile sıfırlanabilir.
+
+<p align="center">
+  <img src="resimler/eski_skorlar.png" width="45%"/>
+  <img src="resimler/giris_loglari.png" width="45%"/>
+</p>
 
 ---
 
@@ -177,8 +206,6 @@ C:\P2Oyun\
 
 ## 🎨 Tasarım
 
-Koyu tema ile tasarlanmış modern bir arayüz:
-
 | Renk | RGB | Kullanım |
 |------|-----|----------|
 | 🟡 Sarı | (255, 210, 60) | Başlık, durum metni |
@@ -190,21 +217,18 @@ Koyu tema ile tasarlanmış modern bir arayüz:
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler ve Bileşenler
+## 🛠️ Kullanılan Bileşenler
 
 | Bileşen | Kullanım Yeri |
 |---------|--------------|
 | `JFrame` | Ana pencereler |
 | `JTabbedPane` | 4 sekmeli oyun ekranı |
 | `JMenuBar / JMenu / JMenuItem` | Oyun menüsü |
-| `JLabel` (dinamik) | Harf kutuları — `*` ile başlar |
-| `JPanel` | Harf ve sözlük panelleri |
+| `JLabel` (dinamik) | Harf kutuları |
 | `JTextField` | Harf & kelime girişi |
 | `JPasswordField` | Şifre girişi |
 | `JButton` | Tüm butonlar |
 | `JTable` | Skor ve log listeleme |
-| `DefaultTableModel` | Tablo veri modeli |
-| `JScrollPane` | Tablo kaydırma |
 | `ImageIcon` | Adam asmaca resimleri |
 | `javax.swing.Timer` | Saniye sayacı |
 | `BufferedReader / BufferedWriter` | Dosya okuma/yazma |
@@ -216,7 +240,7 @@ Koyu tema ile tasarlanmış modern bir arayüz:
 
 > ✅ Tüm dosya yolları `DosyaYonetici.java` sınıfında **sınıf değişkeni** olarak tanımlanmıştır
 
-> ✅ Sadece `C:\P2Oyun\TXTDosyalar\kelimeler.txt` değiştirilerek kelimeler güncellenebilir
+> ✅ Sadece `kelimeler.txt` değiştirilerek kelimeler güncellenebilir
 
 > ✅ Kod içinde **hiçbir değişiklik** yapmaya gerek yoktur
 
